@@ -9,7 +9,7 @@ robot_ear = speech_recognition.Recognizer()
 robot_brain = ""
 
 def weather_forecast(city_input):
-    api_key = pyowm.OWM('6d113de4bb0056d5922180d8dc4ad01a')
+    api_key = pyowm.OWM('xxx') #Enter API Key
     weather_bot = api_key.weather_manager()
     weather_place = weather_bot.weather_at_place(city_input)
     the_weather = weather_place.weather
